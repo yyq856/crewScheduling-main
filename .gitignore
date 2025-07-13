@@ -1,0 +1,224 @@
+# =============================================================================
+# 机组排班优化系统 Git 忽略文件
+# Crew Scheduling Optimization .gitignore
+# =============================================================================
+
+# Python 核心文件 (Python Core Files)
+# ====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# =============================================================================
+# 项目特定文件 (Project Specific Files)
+# =============================================================================
+
+# 调试和输出目录 (Debug & Output Directories)
+# ============================================
+debug/
+output/
+results/
+logs/
+*.log
+
+# Gurobi 优化求解器文件 (Gurobi Optimizer Files)
+# ===============================================
+*.lp
+*.mps
+*.sol
+*.ilp
+*.rlp
+*.prm
+gurobi.log
+
+# 优化结果文件 (Optimization Result Files)
+# =========================================
+rosterResult_*.csv
+crew_detail_*.csv
+test_report.csv
+optimization_*.log
+solution_*.json
+performance_*.csv
+
+# AI模型文件 (AI Model Files)
+# ============================
+# 注释掉模型文件忽略规则，允许上传所有模型文件
+# models/*.pth
+# models/*.pkl
+# models/*.joblib
+!models/.gitkeep
+# 保持训练过程文件的忽略
+checkpoints/
+tensorboard_logs/
+wandb/
+# 忽略大型临时模型文件
+models/temp_*.pth
+models/checkpoint_*.pth
+models/*_backup.pth
+
+# 数据缓存文件 (Data Cache Files)
+# ===============================
+*.cache
+*.pickle
+*.pkl
+data/.cache/
+data/processed/
+data/temp/
+
+# 临时文件 (Temporary Files)
+# ===========================
+*.tmp
+*.temp
+*~
+*.bak
+*.swp
+*.swo
+
+# 提交目录 (Submit Directories)
+# ==============================
+submit/*/
+!submit/.gitkeep
+!submit/README.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
