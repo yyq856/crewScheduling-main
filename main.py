@@ -557,7 +557,7 @@ def main() -> None:
         no_improvement_count = 0
         improvement_threshold = 1e-4  # 目标函数改进阈值（从1e-6放宽到1e-4）
         
-        for cg_iter in range(1):  # 限制列生成轮数改为5（从10减少到5）
+        for cg_iter in range(5):  # 限制列生成轮数改为5（从10减少到5）
             print(f"\n=== 第{branch_iterations}轮分支定价列生成第 {cg_iter+1} 轮 ===")
             
             # 在每轮列生成开始前更新全局分母（仅第一轮分支定价的第一轮列生成使用初始解）
